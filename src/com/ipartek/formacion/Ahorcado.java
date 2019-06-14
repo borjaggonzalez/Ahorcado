@@ -13,7 +13,7 @@ public class Ahorcado {
 		int vidas = 7;
 		int aciertos = 0;
 		int tamano;
-		String palabra = "viernes";
+		String palabra = "murcielago";
 		String opcion; // aqui metemos la letra que el usuario indica.
 		char[] respuesta;
 		tamano = palabra.length();
@@ -35,7 +35,7 @@ public class Ahorcado {
 
 			do {
 				System.out.println("\n\n Introduce una letra: ");
-				opcion = sc.nextLine().trim().toLowerCase();// trim = elimina espacios delante y detras
+				opcion = sc.nextLine().trim().toUpperCase();// trim = elimina espacios delante y detras
 			} while (opcion.isEmpty());
 
 			int lacertada = 0;
@@ -47,7 +47,7 @@ public class Ahorcado {
 			
 			
 			for (int i = 0; i < tamano; i++) {
-				if (opcion.charAt(0) == palabra.charAt(i) && lExistente[i]!=true) {
+				if (opcion.charAt(0) == palabra.toUpperCase().charAt(i) && lExistente[i]!=true) {
 					respuesta[i] = opcion.charAt(0);
 					lExistente[i]=true;
 					lacertada++;
@@ -59,6 +59,7 @@ public class Ahorcado {
 			// Restamos 1 vida si no esta la letra
 			if (lacertada == 0) {
 				vidas--;
+				System.out.println("Te quedan: " + vidas + " vidas.");
 			}
 
 			// Pintamos la palabra con las letras acertadas.
