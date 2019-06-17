@@ -1,13 +1,18 @@
 package com.ipartek.formacion.examen;
-
+/**
+ * Se introducen los datos de un tren por teclado Luego se muestran todos sus
+ * datos identificativos Si esta el aforo completo o no Si es demasiado viejo
+ * para cicular o no.
+ * 
+ * @author Borja
+ *
+ */
 public class Ejercicio4 {
 
 	public static int CAPACIDAD_MAX = 400;
 	public static int ANIOS_MAXIMOS = 40;
 
 	public static void main(String[] args) {
-
-		String viejo;
 
 		Tren tren = new Tren("TAV", 25607, 150, 28);
 

@@ -1,10 +1,7 @@
 package com.ipartek.formacion.examen;
 
 /**
- * Se introducen los datos de un tren por teclado Luego se muestran todos sus
- * datos identificativos Si esta el aforo completo o no Si es demasiado viejo
- * para cicular o no.
- * 
+ *  
  * @author Borja
  *
  */
@@ -15,14 +12,12 @@ public class Tren {
 	private int asientosOcupados;
 	private int aniosActivo;
 
-	
-
 	public Tren(String tipo, int referencia, int asientosOcupados, int aniosActivo) {
 		super();
-		this.tipo = tipo;
-		this.referencia = referencia;
-		this.asientosOcupados = asientosOcupados;
-		this.aniosActivo = aniosActivo;
+		this.setTipo(tipo);
+		this.setReferencia(referencia);
+		this.setAsientosOcupados(asientosOcupados);
+		this.setAniosActivo(aniosActivo);
 	}
 
 	public String getTipo() {
@@ -56,7 +51,5 @@ public class Tren {
 	public void setAniosActivo(int aniosActivo) {
 		this.aniosActivo = aniosActivo;
 	}
-	
-	
 
 }
