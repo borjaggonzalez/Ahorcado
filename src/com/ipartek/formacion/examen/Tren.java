@@ -52,4 +52,11 @@ public class Tren {
 		this.aniosActivo = aniosActivo;
 	}
 
+	
+	public String mostrar() {
+		return "tipo=" + tipo + ", referencia=" + referencia;
+	}
+
+	
+	
 }

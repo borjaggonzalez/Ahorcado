@@ -39,8 +39,8 @@ public class Ejercicio4 {
 		
 		Tren tren = new Tren(tipo, referencia, asientosOcupados, aniosActivo);
 
-		System.out.println(tren.getTipo());
-		System.out.println(tren.getReferencia());
+		System.out.println(tren.mostrar());
+		
 		if (tren.getAsientosOcupados() > CAPACIDAD_MAX) {
 			System.out.println("Tren completo");
 		} else {
