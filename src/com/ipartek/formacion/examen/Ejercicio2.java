@@ -27,7 +27,7 @@ public class Ejercicio2 {
 		} else {
 			System.out.println("Ponte las pilas si quieres ganar");
 		}
-
+sc.close();
 	}
 /**
  * Comprueba si el piloto puede o no ganar el titulo

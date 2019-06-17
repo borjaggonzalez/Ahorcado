@@ -52,7 +52,7 @@ public class Ejercicio4 {
 			System.out.println("El tren puede circular");
 		}
 		
-		
+		sc.close();
 		
 	}
 }
