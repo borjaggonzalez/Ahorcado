@@ -36,7 +36,17 @@ public class Ejercicio3 {
 			}
 		}
 
-		System.out.println("Hay " + multiplos + " multiplos de 7");
+		System.out.printf("\n\n Hay " + multiplos + " multiplos de 7 y son:");
+		for (int i = 0; i < datos.length; i++) {
+			if (datos[i] % 7 == 0) {
+				if(i==0) {
+					System.out.printf(" "+datos[i]);
+				}else {
+					System.out.printf(", "+datos[i]);
+				}
+			
+			}
+		}
 
 		for (int i = 0; i < datos.length; i++) {
 			media = media + datos[i];
@@ -44,7 +54,7 @@ public class Ejercicio3 {
 
 		media = media / datos.length;
 
-		System.out.println("La media es: " + formato.format(media));
+		System.out.println("\n\n La media es: " + formato.format(media));
 
 		sc.close();
 	}
