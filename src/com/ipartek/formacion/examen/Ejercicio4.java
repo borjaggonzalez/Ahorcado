@@ -3,8 +3,9 @@ package com.ipartek.formacion.examen;
 import java.util.Scanner;
 
 /**
- * Se introducen los datos de un tren por teclado Luego se muestran todos sus
- * datos identificativos Si esta el aforo completo o no Si es demasiado viejo
+ * Se introducen los datos de un tren por teclado
+ * Luego se muestran todos sus datos identificativos 
+ * Si esta el aforo completo o no Si es demasiado viejo
  * para cicular o no.
  * @author Borja
  *
