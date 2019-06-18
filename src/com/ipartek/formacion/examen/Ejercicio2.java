@@ -27,12 +27,13 @@ public class Ejercicio2 {
 		} else {
 			System.out.println("Ponte las pilas si quieres ganar");
 		}
-sc.close();
+		sc.close();
 	}
+	
 /**
  * Comprueba si el piloto puede o no ganar el titulo
  * @param puntosPiloto --> Lo puntos que lleva el piloto en el campeonato
- * @return
+ * @return true si puntos >= 70, else false
  */
 	public static boolean Ganar(int puntosPiloto) {
 		boolean campeonato = false;

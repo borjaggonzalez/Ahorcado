@@ -1,11 +1,13 @@
 package com.ipartek.formacion.examen;
 
 /**
- *  
+ * 
  * @author Borja
  *
  */
 public class Tren {
+	final static int CAPACIDAD_MAXIMA = 400;
+	final static int EDAD_MAXIMA = 40;
 
 	private String tipo;
 	private int referencia;
@@ -52,11 +54,34 @@ public class Tren {
 		this.aniosActivo = aniosActivo;
 	}
 
-	
 	public String mostrar() {
 		return "tipo=" + tipo + ", referencia=" + referencia;
 	}
 
-	
-	
+	/**
+	 * Comprueba la capacidad maxima del tren
+	 * 
+	 * @see CAPACIDAD_MAXIMA
+	 * @return true si es mayor o igual a la CAPACIDAD_MAXIMA, false en el caso contrario.
+	 */
+	public boolean estaLleno() {
+
+		boolean resul = false;
+
+		if (this.asientosOcupados >= CAPACIDAD_MAXIMA) {
+			resul = true;
+		}
+		return resul;
+	}
+
+	public boolean esViejo() {
+
+		boolean resul = false;
+
+		if (this.aniosActivo >= EDAD_MAXIMA) {
+			resul = true;
+		}
+		return resul;
+	}
+
 }

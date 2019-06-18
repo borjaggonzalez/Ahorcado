@@ -40,16 +40,20 @@ public class Ejercicio4 {
 		Tren tren = new Tren(tipo, referencia, asientosOcupados, aniosActivo);
 
 		System.out.println(tren.mostrar());
+
 		
-		if (tren.getAsientosOcupados() > CAPACIDAD_MAX) {
-			System.out.println("Tren completo");
-		} else {
-			System.out.println("Aun quedan plazas");
+		
+		
+		if ( tren.estaLleno() ) {
+			System.out.println("Esta petadu el tren");
+		}else {
+			System.out.println("Todavia entramos mas");
 		}
-		if (tren.getAniosActivo() > ANIOS_MAXIMOS) {
-			System.out.println("El tren es demasiado viejo para circular");
-		} else {
-			System.out.println("El tren puede circular");
+		
+		if ( tren.esViejo() ) {
+			System.out.println("Juvilate");
+		}else {
+			System.out.println("Sigue currando");
 		}
 		
 		sc.close();
