@@ -8,7 +8,7 @@ public class Ahorcado {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		int vidas = 7;
 		int aciertos = 0;
